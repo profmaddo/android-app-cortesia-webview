@@ -25,5 +25,6 @@ public class MainActivity extends AppCompatActivity {
 
         webView.loadUrl("https://www.marcomaddo.com.br");
 
+        webView.setWebViewClient(new WebViewClient());
     }
 }
