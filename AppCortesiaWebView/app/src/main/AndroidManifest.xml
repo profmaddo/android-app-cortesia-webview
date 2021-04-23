@@ -3,7 +3,13 @@
     package="br.com.modelo.app">
 
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <permission
+        android:name="br.com.modelo.app.appcontesia"
+        android:label="appcontesia"
+        android:protectionLevel="signature" />
+
 
     <application
         android:allowBackup="true"
@@ -12,7 +18,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="br.com.modelo.app.MainActivity">
+        <activity
+            android:name="br.com.modelo.app.MainActivity"
+            android:exported="true"
+            android:permission="br.com.modelo.app.appcontesia"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
